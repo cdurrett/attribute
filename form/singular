@@ -1,0 +1,19 @@
+attribute
+
+() - message
+alice - alice public key
+alice() - message encrypted w/ alice private key
+()alice - message decrypted w/ alice public key
+* - microsecond time stamp
+
+[] - send/receive
+[attribute.net] - send/receive attribute.net
+
+()[attribute.net](attribute.net) - attribute.net public key
+
+()[attribute.net/attribute.net(alice)]() - send to alice public key 'identity'
+[-] = [attribute.net/attribute.net(alice)]
+
+('age','34',*) [-] alice('age','34',*)  - ex, set 'age' to '34')
+('age',*)[-] alice('34',*)  - ex, get 'age' attribute is '34'
+
